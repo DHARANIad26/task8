@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1> Movie Ticket Booking</h1>
+
+    <div class="container">
+        <h2>Book Your Tickets</h2>
+
+        <label>Movie Name:</label>
+        <select id="movie">
+            <option value="180">SPIDERMAN</option>
+            <option value="150">AVENGERS</option>
+            <option value="200">MARVELS</option>
+        </select>
+
+        <label>Select Date:</label>
+        <input type="date" id="date">
+
+        <label>Show Time:</label>
+        <select id="time">
+            <option>10:00 AM</option>
+            <option>2:00 PM</option>
+            <option>6:00 PM</option>
+            <option>9:00 PM</option>
+        </select>
+
+        <label>Number of Tickets:</label>
+        <input type="number" id="tickets" min="1" value="1">
+
+        <button onclick="bookTicket()">Book Ticket</button>
+    </div>
+    <div class="details" id="details">
+        <h2> Booking Details</h2>
+
+        <p id="movieName"></p>
+        <p id="bookingDate"></p>
+        <p id="showTime"></p>
+        <p id="ticketCount"></p>
+        <p id="ticketPrice"></p>
+        <h3 id="totalAmount"></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
